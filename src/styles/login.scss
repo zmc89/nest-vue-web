@@ -1,0 +1,120 @@
+.content {
+    width: 100%;
+    height: 100%;
+    background: url("@/assets/images/bg.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    .login-left {
+      position: relative;
+  
+      .title {
+        position: absolute;
+        left: 100px;
+  
+        h1 {
+          min-width: 300px;
+        }
+  
+        h4 {
+          font-weight: 400;
+          letter-spacing: 0px;
+          line-height: 0px;
+          color: rgba(110, 115, 111, 1);
+          text-align: left;
+        }
+      }
+    }
+  
+    .login-right {
+      width: 496px;
+      height: 500px;
+      opacity: 1;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 20px 60px 0px rgba(123, 61, 224, 0.1);
+      margin-right: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      .login-form {
+  
+        .login-title {
+          text-align: center;
+  
+          h1 {
+            min-width: 300px;
+          }
+  
+          h4 {
+            font-weight: 400;
+            letter-spacing: 0px;
+            line-height: 0px;
+            color: rgba(110, 115, 111, 1);
+          }
+        }
+  
+        .switch {
+          width: 160px;
+          height: 36px;
+          border-radius: 18px;
+          background: rgba(123, 61, 224, 0.1);
+          display: flex;
+          margin: 28px auto;
+  
+          div {
+            width: 80px;
+            height: 100%;
+            left: 60px;
+            border-radius: 18px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #101727;
+            text-align: center;
+            line-height: 36px;
+          }
+  
+          .checked {
+            color: #fff;
+            background: rgba(123, 61, 224) !important;
+          }
+        }
+  
+        .form {
+  
+          .login-animation {
+            width: 376px;
+  
+            :deep(.el-input__wrapper) {
+                 
+                 &.is-focus {
+                     box-shadow: 0 0 0 1px #7b3de0 inset;
+                 }
+            }
+
+            .captCha {
+              // border: 1px solid #7b3de0;
+              // border-radius: 10px;
+              vertical-align:sub;
+              margin-left: 8px;
+            }
+          }
+  
+  
+          .login-button {
+            width: 376px;
+            height: 48px;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 48px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,122 @@
+@import './icon.scss';
+
+:root {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  html,
+  body,
+  #app {
+    margin: 0;
+    padding: 0;
+    margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -webkit-tap-highlight-color: transparent;
+      background-color: #F5F5F5;
+      font-size: 14px;
+      overflow: hidden;
+  }
+  
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+  }
+
+/* layout
+--------------------------------- */
+.layout-container {
+  width: 100%;
+  height: 100%;
+
+  .flex-center {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .layout-aside {
+    width: 250px;
+    height: inherit;
+    background: #FFFFFF;
+    overflow: hidden;
+    transition: width 0.28s;
+  }
+
+  .layout-header {
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #f1f2f3;
+
+  .el-breadcrumb__inner a:hover, .el-breadcrumb__inner.is-link:hover {
+    cursor: pointer;
+    color: #7a89fe;
+  }
+
+  .el-breadcrumb__inner {
+    font-weight: 400 !important;
+  }
+
+  .el-breadcrumb__inner .is-link {
+    color: #7a89fe;
+  }
+
+  }
+
+  .layout-main {
+		padding: 0 !important;
+		overflow: hidden;
+		width: 100%;
+    background-color: #F5F5F5;
+
+    .el-scrollbar {
+      padding: 15px;
+    }
+	} 
+
+}  
+
+
+
+
+  /* 宽高 100%
+------------------------------- */
+.w100 {
+	width: 100% !important;
+}
+.h100 {
+	height: 100% !important;
+}
+.vh100 {
+	height: 100vh !important;
+}
+.max100vh {
+	max-height: 100vh !important;
+}
+.min100vh {
+	min-height: 100vh !important;
+}
+
+  
